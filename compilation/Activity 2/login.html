@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="loginpage">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body background="images/bg.jpg" scroll="no" style="background-attachment: fixed;">
+    <div id="top">
+        <table align="center" width = "100%"  border="0" cellspacing="0" cellpadding="0" style="position:fixed; top:0%">
+            <tr height="100" >
+                <td width= "150" align="center"><a href = "index.html"><font color = "#bdbdbd"><img src="images/logo.png" alt="" height=50 width=50 ></img></font></a></td>
+            </tr>
+        </table>
+        <table align="center" width = "100%"  border="0" cellspacing="0" cellpadding="0"> <!-- TABLE LOGIN -->
+            <tr height="945">
+                <td align="center" valign="center">
+                    <h1 class="loginhead">ACCOUNT LOGIN</h1>
+                    <table width = "30%"  border="0" cellspacing="15" cellpadding="0" align="center" style="opacity: 0.9;" >
+                        <tr bgcolor="#242424" >
+                            <td width="48%" align="left" valign="top"  style="border-radius: 30px;">
+                                <table width="100%" border="0">
+                                    <tr>  <!-- space -->
+                                        <td height="60"></td>
+                                        <td ></td>
+                                        <td ></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="60"></td>
+                                        <td >
+                                            <table> <!-- FORM -->
+                                                <tr>
+                                                    <td>
+                                                        <form align="center">
+                                                            <label style="color:white ; font-size:25px; font-weight: 400; letter-spacing: 1px;">Name<br></label>
+                                                            <input class="sign "style="margin-bottom: 40px;" type="text" name="name" required>
+                                                            <label style="color:white ; font-size:25px; font-weight: 400; letter-spacing: 1px;">Password<br></label>
+                                                            <input  class="sign "style="margin-bottom: 40px;" type="password" name="password" required>
+                                                            <button class="login" type="submit">LOGIN</button>
+                                                            <a href = "#sign" style="text-decoration:none;"><font color = "#bdbdbd"><br><br><br>CREATE NEW ACCOUNT</font></a></td>
+                                                        </form>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="60"></td>
+                                    </tr>
+                                    <tr>  <!-- space -->
+                                        <td  height="30"></td>
+                                        <td ></td>
+                                        <td ></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="sign">
+        <table align="center" width = "100%"  border="0" cellspacing="0" cellpadding="0"> <!-- TABLE SIGNUP -->
+            <tr height="945">
+                <td align="center" valign="center">
+                    <h1 class="loginhead">SIGNUP</h1>
+                    <table width = "30%"  border="0" cellspacing="15" cellpadding="0" align="center" style="opacity: 0.9;" >
+                        <tr bgcolor="#242424" >
+                            <td width="48%" align="left" valign="top"  style="border-radius: 30px;">
+                                <table width="100%" border="0">
+                                    <tr>  <!-- space -->
+                                        <td height="30"></td>
+                                        <td ></td>
+                                        <td ></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="60"></td>
+                                        <td >
+                                            <table> <!-- FORM -->
+                                                <tr>
+                                                    <td>
+                                                        <form class="formsign">
+                                                            <label>Name:<br></label>
+                                                            <input class="sign" type="text" name="name" required>
+                                                            <label>Email:<br></label>
+                                                            <input class="sign" type="email" name="email" required>
+                                                            <label>Password:<br></label>
+                                                            <input class="sign" type="password" name="password" required>
+                                                            <label>Birthdate:<br></label>
+                                                            <input class="sign" style="margin-bottom: 20px;" type="date" name="date" required>
+                                                            <label>Gender:<br></label>
+                                                            <input type="radio" id="male" value="male" name="gender">
+                                                            <label style="margin-right: 100px;" >Male</label>
+                                                            <input type="radio" id="female" value="female" name="gender">
+                                                            <label >Female</label><br>
+                                                            <input type="radio" id="nonbinary" value="nonbinary" name="gender">
+                                                            <label style="margin-right: 40px;" >Non-Binary</label>
+                                                            <input type="radio" id="others" value="others" name="gender">
+                                                            <label >Others</label><br>
+                                                            
+                                                            
+                                                            <button class="login" style="width: 49%;  padding: 15px; margin-top: 35px;" type="submit">LOGIN</button>
+                                                            <button class="login" style="width: 49%;  padding: 15px; margin-top: 10px; margin-bottom: 30px; margin-left:3px ;" type="reset">RESET</button>
+                                                            <a href = "#top" style="text-decoration:none; margin-left: 105px;"><font color = "#bdbdbd">ALREADY HAVE AN ACCOUNT</font></a></td>
+                                                        </form>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="60"></td>
+                                    </tr>
+                                    <tr>  <!-- space -->
+                                        <td  height="30"></td>
+                                        <td ></td>
+                                        <td ></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+@font-face {
+    font-family: 'deadpool';
+    src:  url('font/dp.ttf') format('truetype');
+  }
+
+html {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
+}
+
+.loginpage {
+    scroll-behavior: initial;
+    scrollbar-width: none;
+    overflow-y: hidden; 
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    margin:0; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400; 
+    height: 1500px;
+}
+
+a,a:link ,a:hover, a:visited, a:active{
+    color: inherit;
+    text-decoration: none;
+   }
+
+.tablenav {
+    position:fixed;
+    top: 0%;
+    border-spacing: 10px;
+    border-collapse: separate;
+    width: 100% ;
+    text-align: center;
+}
+
+.navfont {
+    color:#bdbdbd;
+    text-decoration:none;
+    text-align: center;
+    letter-spacing:4px ;
+}
+
+.tablenav tr:first-child td:hover{
+    font-weight: 900;
+    font-size: large;
+    letter-spacing: 2.5px ;
+}
+
+.navselected {
+    font-weight: 900;
+}
+
+button:hover{
+    font-size: large;
+}
+
+h1 {
+    font-family: 'deadpool';
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+
+.header {
+    font-family: 'deadpool';
+    letter-spacing: 5px;
+    font-weight: normal;
+    font-size: 60px;
+    color: white;
+    -webkit-text-stroke: .5px black;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.comics {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    -webkit-text-stroke: .5px black;
+    font-size:19px; 
+    letter-spacing: 1px;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+button.login {
+    background:#c55151;
+    border-radius: 25px;
+    color: white;
+    font-size:25px;
+    width: 50%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px; 
+    border: none;
+}
+
+button.login:hover{
+    background:#e66565 ;
+}
+
+input.sign{
+    background: #555; 
+    border-radius: 25px; 
+    color: white; 
+    font-size:20px; 
+    width: 100%;  
+    padding: 15px; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    border: none 
+}
+
+.formsign label{
+    color:white ; 
+    font-size:20px; 
+    font-weight: 400; 
+    letter-spacing: 1px;
+}
+
+.formsign input[type="radio"]{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.formsign a{
+    color:white ; 
+    font-size:15px; 
+    font-weight: 400; 
+    letter-spacing: 1px;
+    height: 25px;
+    text-align: center;
+}
+
+img.cart {
+    vertical-align: middle; 
+    width: 35px; 
+    margin-right: 10px ; 
+    margin-left: 5px;
+}
+
+.shopselect{
+    background: #555; 
+    border-radius: 10px; 
+    color: white; 
+    font-size:20px; 
+    width: 100%;  
+    padding: 15px; 
+    margin-top: 10px; 
+    margin-bottom: 40px; 
+    border: none;
+}
+
+.shoplabel {
+    color:white ; 
+    font-size:25px; 
+    font-weight: 400; 
+    letter-spacing: 1px;
+}
+
+.shopprice {
+    color:white ; 
+    font-size:40px; 
+    letter-spacing: 1px;
+}
+
+.uname{
+    color:white ; 
+    font-size:25px; 
+    font-weight: 900;
+    letter-spacing: 1px;
+    vertical-align: bottom;
+}
+
+.upic{
+    height: 75px;
+    width: 75px;
+    border-radius: 30px;
+}
+
+.utime{
+    color:white ; 
+    font-size:15px; 
+    font-weight: 400; 
+    letter-spacing: 1px;
+    vertical-align: top;
+    height: 35%;
+}
+
+.upost {
+    color:white ; 
+    font-size:25px; 
+    font-weight: 900; 
+    letter-spacing: 1px;
+    vertical-align: top;
+}
+
+.ucomment{
+    color:white ; 
+    font-size:15px; 
+    font-weight: 400; 
+    letter-spacing: 1px;
+    vertical-align: bottom;
+    height: 25px;
+    text-align: left;
+}
+
+.ucommentarea{
+    background:rgb(65, 65, 65); 
+    border-radius: 8px; 
+    color: white; 
+    font-size:25px; 
+    width: 95%;  
+    padding: 15px;
+}
+
+.loginhead{
+    color:white ; 
+    font-size:40px; 
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.dphome{
+    height: 850px;
+    background-color: black;
+    background-image: url("test2.gif");
+    background-size: cover;
+}
+
+.homequote {
+    font-family: 'Nanum Pen Script', cursive; 
+    font-size:50px; 
+    font-style: italic; 
+    color:Black; 
+}
+
+.homequote1 {
+    font-size:25px; 
+    font-style: italic; 
+    font-weight: 100; 
+    letter-spacing: 1px;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.hometitle {
+    color:white ; 
+    font-size:45px;
+}
+
+.hometitle1 {
+    color:white ; 
+    font-size:30px;
+}

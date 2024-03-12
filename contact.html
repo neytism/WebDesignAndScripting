@@ -1,0 +1,129 @@
+<!DOCTYPE html >
+<html lang="en" style="overflow-y: hidden; scroll-behavior: initial;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./media/images/icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="mix-blend-mode: difference;">
+        <div class="container" style="margin-top: 3vh;">
+            <a class="navbar-brand" style="letter-spacing: 5px; cursor: none" id="hoverable" href="#"><xmp><NATE></xmp></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav" id="hoverable">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./index.html" style="cursor: none ;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./index.html#about" style="cursor: none ;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./portfolio.html" style="cursor: none ;">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#" style="cursor: none ;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bodyholder">
+
+        
+
+        <video muted autoplay loop class="mastheadnormal">
+            <source src="./media/videos/2.mp4" type="video/mp4">
+        </video>
+        <div class="formcontainer">
+            <div>
+                <div class="contact-form-wrapper d-flex justify-content-center">
+                  <form action="#" class="contact-form" onsubmit="sendEmail(); reset(); return false;">
+                    <h5 class="title">Contact us</h5>
+                    <p class="description">If you require any further information, please feel free to contact me.
+                    </p>
+                    <div>
+                      <input type="text" id="name" class="form-control rounded border-white mb-4 form-input" placeholder="Name" required>
+                    </div>
+                    <div>
+                      <input type="email" id= "email" class="form-control rounded border-white mb-4 form-input" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <input type="text" id="phone" class="form-control rounded border-white mb-4 form-input" placeholder="Phone">
+                      </div>
+                    <div>
+                      <textarea id="message" class="form-control rounded border-white mb-4 form-text-area" rows="10" cols="30" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="submit-button-wrapper" id="hoverable">
+                      <input type="submit" value="Send">
+                    </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- cursor -->
+
+    <div class="cursor">
+        <div class="cursor__ball cursor__ball--big ">
+            <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
+
+        <div class="cursor__ball cursor__ball--small">
+            <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
+
+
+    <!-- scripts -->
+    <script type="text/javascript" src="TweenMax.min.js"></script>
+    <script type="text/javascript" src="./js/script.js" id="rendered-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    Username: "neytismbot@gmail.com",
+                    Password: "59902B199D9F194AF438C5AA3857D7B92B01",
+                    To: 'neytism@gmail.com',
+                    From: document.getElementById("email").value,
+                    Subject: "New Inquiry",
+                    Body: "Name: " + document.getElementById("name").value 
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone Number: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+                }).then(
+                    message => alert("Message Sent Successfully. Press Enter...")
+                );
+            }
+    </script>
+
+</body>
+
+
+
+</html>
